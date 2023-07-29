@@ -11,14 +11,20 @@ const makeStyles = <
 >(
   param: (() => T) | ((theme: Theme) => T) | ((theme: Theme, deps: U) => T) | T
 ): ReturnedHook<T, U> => {
+  const isFunction = typeof param === "function";
+  const functionParams = typeof param === "function" ? param.length : undefined;
   const useStyles = (deps?: U) => {
     const theme = useTheme();
-    const dependencies = Object.values(deps || {});
+    const dependencies = isFunction
+      ? functionParams === 2
+        ? Object.values(deps || {})
+        : []
+      : [];
     const styles = useMemo(() => {
-      if (typeof param === "object") {
+      if (!isFunction) {
         return param;
       }
-      switch (param.length) {
+      switch (functionParams) {
         case 0:
           return (param as () => T)();
           break;
