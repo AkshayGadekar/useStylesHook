@@ -1,7 +1,7 @@
 {
   "name": "mui-styles-hook",
   "version": "1.1.1",
-  "description": "Styling hook for React MUI",
+  "description": "React Hook for Material UI to link stylesheets",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
