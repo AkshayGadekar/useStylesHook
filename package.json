@@ -24,7 +24,7 @@
     "mui"
   ],
   "author": "Akshay Gadekar <akgadekar03@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AkshayGadekar/useStylesHook/issues"
   },
