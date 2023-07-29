@@ -39,4 +39,4 @@ const makeStyles = <
   return useStyles;
 };
 
-export { makeStyles, type SX };
+export { makeStyles, type SX, type Theme };
