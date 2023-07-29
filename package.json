@@ -1,0 +1,43 @@
+{
+  "name": "@akki/useStyles",
+  "version": "1.0.0",
+  "description": "Styling hook for React MUI",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkshayGadekar/useStylesHook.git"
+  },
+  "keywords": [
+    "styling hook for react material ui",
+    "useStyles",
+    "hook",
+    "emotion",
+    "sx",
+    "mui"
+  ],
+  "author": "Akshay Gadekar <akgadekar03@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkshayGadekar/useStylesHook/issues"
+  },
+  "homepage": "https://github.com/AkshayGadekar/useStylesHook#readme",
+  "devDependencies": {
+    "@mui/material": "^5.14.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.3",
+    "react": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
