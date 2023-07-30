@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   typography: { display: { xs: "block", md: "inline" } },
 });
 
-const SendBtn = (props) => {
+const SendBtn = () => {
   const styles = useStyles();
 
   return (
@@ -37,7 +37,7 @@ const SendBtn = (props) => {
 };
 ```
 
-One can also use Theme
+One can also use Theme in styles by passing a function accepting theme as first parameter and returning a styles object
 
 ```javascript
 const useStyles = makeStyles((theme) => ({
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 ```
 
-One can also pass depenedencies
+One can also pass depenedencies to function as second parameter besides theme
 
 ```javascript
 const useStyles = makeStyles((theme, deps) => ({
@@ -71,11 +71,11 @@ const SendBtn = (props) => {
 };
 ```
 
-Depenedencies are passed as simple object to useStyles hook. Styles are memoized based on values in object, whenever values changes styles gets prepared again, object should not have reference values.
+Depenedencies are passed as simple object to useStyles hook as depenedency object. Styles are memoized based on values in depenedency object, whenever values changes styles gets prepared again, depenedency object should not have reference values.
 
 ### Typescript
 
-makeStyles is a generic function. It accepts two types, first is styles interface and second is dependcies interface if one is passing dependcies.
+makeStyles is a generic function. It accepts two types, first is styles interface and second is dependencies interface if one is passing dependencies.
 
 ```typescript
 import { makeStyles, type SX, type Theme } from "mui-styles-hook";
