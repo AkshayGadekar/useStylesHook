@@ -1,7 +1,7 @@
 {
   "name": "mui-styles-hook",
-  "version": "1.1.0",
-  "description": "Styling hook for React MUI",
+  "version": "1.1.1",
+  "description": "React Hook for Material UI to link stylesheets",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -24,7 +24,7 @@
     "mui"
   ],
   "author": "Akshay Gadekar <akgadekar03@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AkshayGadekar/useStylesHook/issues"
   },
