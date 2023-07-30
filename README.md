@@ -92,3 +92,7 @@ const useStyles = makeStyles<Styles, Deps>((theme: Theme, deps) => ({
   typography: { display: { xs: "block", md: deps.mdDisplay } },
 }));
 ```
+
+## Contribution
+
+You can contribute to this package by discovering bugs and opening issues. Please, add to which version of package you create pull request or issue. (e.g. [1.0.0] Fatal error on `makeStyles` method)
