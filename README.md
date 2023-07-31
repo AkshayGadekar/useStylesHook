@@ -13,6 +13,8 @@ npm i mui-styles-hook
 
 ## Usage
 
+One only needs to import `makeStyles` function from package and declare styles in it. It returns hook `useStyles` (one can name it) which can be used in the component to use the styles.
+
 ```javascript
 import { makeStyles } from "mui-styles-hook";
 
