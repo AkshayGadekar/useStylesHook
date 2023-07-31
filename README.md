@@ -39,7 +39,7 @@ const SendBtn = () => {
 };
 ```
 
-One can also use Theme in styles by passing a function to `makeStyles` accepting theme as first parameter and returning a styles object
+One can also use Theme in styles by passing a callback function to `makeStyles` accepting theme as first parameter and returning a styles object
 
 ```javascript
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 ```
 
-One can also use depenedencies, just pass it to function as second parameter besides theme
+One can also use depenedencies, just pass it to callback function as second parameter besides theme
 
 ```javascript
 const useStyles = makeStyles((theme, deps) => ({
